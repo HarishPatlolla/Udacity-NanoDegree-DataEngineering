@@ -39,6 +39,8 @@ time - timestamps of records in songplays broken down into specific units
     The subsequent datasets were then processed to extract the date, time, year etc. fields and records are then 
     appropriately entered into the time, users and songplays as parquet data structures.
 
+![screenshot][datalakes_spark.jpg]
+
 # Project Structure
 
     dl.cfg - Configuration file that contains info about AWS credentials
