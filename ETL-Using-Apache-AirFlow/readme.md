@@ -7,7 +7,8 @@ A music streaming company, Sparkify, has decided that it is time to introduce mo
 
 Tables must be created in Redshift before executing the DAG workflow. 
 The create tables statements can be found in:
-  *script_name : create_tables.sql
+ 
+*script_name : create_tables.sql*
 
 ### Step 2:
 ### Data Sources
@@ -37,4 +38,4 @@ If a table has no rows then the workflow will fail;throw an error message.
 *udac_example_dag.py* 
 
 
-![screenshot](data_quality_checks)
+![screenshot](data_quality_checks.JPG)
