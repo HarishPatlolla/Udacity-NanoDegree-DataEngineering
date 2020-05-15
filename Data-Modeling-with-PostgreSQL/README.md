@@ -2,7 +2,7 @@ The objective of this project was to create a Postgres database with tables desi
 on song play analysis.
 
 
-![alt text](https://github.com/[HarishPatlolla]/[Udacity-NanoDegree-DataEngineering]/[Data-Modeling-with-PostgreSQL]/sparkify_erd.png
+![alt text](https://github.com/[HarishPatlolla]/[Udacity-NanoDegree-DataEngineering]/blob/master/[Data-Modeling-with-PostgreSQL]/sparkify_erd.png
 raw=true)
 
         The star schema was implemented to design the data base for the Sparkify
