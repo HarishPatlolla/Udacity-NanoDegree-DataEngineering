@@ -17,10 +17,11 @@ Data resides in two directories that contain files in JSON format:
  *stage_redshift.py* - Operator to read staging files (songs and events) from S3 and load into Redshift staging tables
 
 ### Step 3 :
-*load_fact.py *- Operator to load the fact table using two staging tables  in Redshift
+
+*load_fact.py*- Operator to load the fact table using two staging tables  in Redshift
 
 ### Step 4:
-* load_dimension.py * - Operator to read from staging tables and load the dimension tables in Redshift
+*load_dimension.py* - Operator to read from staging tables and load the dimension tables in Redshift
 
     
 ### Step 5 :Data Quality Checks
