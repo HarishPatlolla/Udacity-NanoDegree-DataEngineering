@@ -2,8 +2,7 @@ The objective of this project was to create a Postgres database with tables desi
 on song play analysis.
 
 
-![alt text](https://github.com/HarishPatlolla/Udacity-NanoDegree-DataEngineering/blob/master/Data-Modeling-with-PostgreSQL/sparkify_erd.png
-raw=true)
+![Screenshot](sparkify_erd.png)
 
         The star schema was implemented to design the data base for the Sparkify
         There were 1 fact table (songplays SONGPLAY_ID PRIMARY KEY) 
