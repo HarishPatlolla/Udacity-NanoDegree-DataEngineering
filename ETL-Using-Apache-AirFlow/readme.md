@@ -1,14 +1,14 @@
 # Data Pipelines with Airflow
 A music streaming company, Sparkify, has decided that it is time to introduce more automation and monitoring to their data warehouse ETL pipelines and come to the conclusion that the best tool to achieve this is Apache Airflow.
 
-### step 1:
+### Step 1:
 
 Tables must be created in Redshift before executing the DAG workflow. 
 The create tables statements can be found in:
   *script_name : create_tables.sql
 
 ### Step 2:
-# Data Sources
+### Data Sources
 Data resides in two directories that contain files in JSON format:
 
 	Log data: s3://udacity-dend/log_data
@@ -30,5 +30,5 @@ If a table has no rows then the workflow will fail;throw an error message.
 *data_quality.py* - Operator for data quality checking    
 
 
-# Main Dag File which contains the flow to run in AirFlow
+### Main Dag File which contains the flow to run in AirFlow
 *udac_example_dag.py* 
