@@ -1,7 +1,8 @@
+# Data Engineering Capstone Project
 
-## Step 1: Scope the Project and Gather Data
+### Executive Summary
 
-
+The Business Objective of this project is to support the `analytical datawarehouse in Amazon RedShift( cloud data warehouse)` for `U.S. Customs and Border Protection`. It is meant to process the raw data from the source, transform and load to the datalakes to provide analytics ready data about visitors entering U.S. The analytics team at `U.S. Customs and Border Protection` can build the reports; which can help  for better resource allocation;thereby enhancing the visitors experience hassle-free on their entry into United States.  
 ### The Architecture
 
 The complete solution is cloud based on top of `Amazon Web Services (AWS)`. 
