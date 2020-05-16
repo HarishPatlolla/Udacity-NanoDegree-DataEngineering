@@ -29,3 +29,34 @@ This dataset comes from Kaggle Source. Includes temperature recordings of cities
 
 `US City Demographic Data`
 This dataset comes from OpenSoft Source. Includes population formation of US states, like race and gender
+
+####  Conceptual Data Model
+
+STAR SCHEMA has been chosen to maintain the data integrity
+
+After acessing the data from different datasets, we have `Immigration`,`country`,`Demographics` tables 
+
+1. `Immigration Table` - It forms the center of the data warehouse. It is the Fact table consisting information about the 
+    visitors information like Arrival Date, Departure Date, Gender, AirLine, Type of Visa
+    *Primary Key = cicid ( Unique identifer for the Visitor )*
+    
+    
+2.  ` Date Dimension Table` - From the Immigration table, a date dimension table was created using the Unique 
+      arrival and departure dates
+      *Primary Key = date*
+      
+        
+3.  `The STATE dimension table` contains aggregation of the demographics dataset by the State column. It contains the 
+      overall statistics ( Median Age, Male Population, Female Population, Total Population, Number of Veterans, Foreign-born)
+      and the same statistics for each of the race ((BlackOrAfricanAmerican, White, ForeignBorn, AmericanIndianAndAlaskaNative, 
+      HispanicOrLatino, Asian)
+      *Primary Key State*
+      
+      
+4. `The COUNTRY dimention` completes our star schema model. It has the average temperature , lattitude , longitude 
+    for each country
+    *Primary key COuntry*
+
+#### ETL Data Pipelines
+
+The `ETL` pipeline to `Extract` the data from the repository, `Transform` using Spark and `Load` into S3 buckets in parquet format
